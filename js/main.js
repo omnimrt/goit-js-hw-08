@@ -73,7 +73,7 @@ gallery.addEventListener("click", (event) => {
     lightbox = basicLightbox
       .create(`<img width="1400" height="900" src="${originalSrc}">`)
       .show();
-    console.log(lightbox.visible);
+    console.log(lightbox.visible());
     document.addEventListener("keydown", handleKeyDown);
   }
 });

@@ -64,8 +64,6 @@ const images = [
   },
 ];
 
-import * as basicLightbox from "basiclightbox";
-
 const gallery = document.querySelector(".gallery");
 let lightbox;
 gallery.addEventListener("click", (event) => {

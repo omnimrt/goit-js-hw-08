@@ -21,3 +21,7 @@ li {
   height: 200px;
   flex-shrink: 0;
 }
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}

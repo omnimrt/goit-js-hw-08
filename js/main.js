@@ -70,10 +70,10 @@ gallery.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.target.classList.contains("gallery-image")) {
     const originalSrc = event.target.dataset.source;
-    lightbox = basicLightbox
-      .create(`<img width="1400" height="900" src="${originalSrc}">`)
-      .show();
-    console.log(lightbox.visible());
+    lightbox = basicLightbox.create(
+      `<img width="1400" height="900" src="${originalSrc}">`
+    );
+    lightbox.show();
     document.addEventListener("keydown", handleKeyDown);
   }
 });
